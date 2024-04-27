@@ -1,7 +1,7 @@
 # IoT_Footfall_Counter
 
 ## Overview
-The Mall Footfall Counter is an IoT-based solution designed to accurately track the number of people entering and exiting a mall or a specific area within the mall. It utilizes sensors and cloud-based analytics to provide real-time and historical data on foot traffic, enabling mall management to make informed decisions regarding staffing, security, and marketing strategies.
+The Mall Footfall Counter is an IoT-based solution designed to accurately track the number of people entering a mall or a specific area within the mall. It utilizes sensors and cloud-based analytics to provide real-time and historical data on foot traffic, enabling mall management to make informed decisions regarding staffing, security, and marketing strategies.
 
 ## Features
 - **Accurate Footfall Tracking**: Utilizes advanced sensors to accurately count the number of people entering and exiting the monitored area.
@@ -29,6 +29,6 @@ The Mall Footfall Counter is an IoT-based solution designed to accurately track 
 4. **Set Alerts**: Set up alerts to be notified of significant changes in foot traffic, enabling proactive management actions.
 
 ## Contributors
-- Manas Pratim Das
+- Manas Pratim Das (https://github.com/2manas8)
 - Md Haider Imam
 - Sourabh
