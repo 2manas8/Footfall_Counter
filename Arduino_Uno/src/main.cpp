@@ -42,7 +42,7 @@ void greet() {
 void wifiCheck() {
   lcd.fillScreen(0xFFFF);
   reset = 0;
-  lcd.text("Connecting", 27, 50);
+  lcd.text("Connecting", 23, 50);
   int temp = 68;
   while(digitalRead(wifiConnection) == LOW) {
     if(temp > 82) {
