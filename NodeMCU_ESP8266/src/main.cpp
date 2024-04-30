@@ -44,7 +44,6 @@ void connectionCheck() {
 }
 
 void setup() {
-  Serial.begin(115200);
   pinMode(led, OUTPUT);
   pinMode(countIncrease, INPUT);
   pinMode(wifi, OUTPUT);
