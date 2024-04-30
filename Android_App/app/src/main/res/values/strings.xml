@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Footfall Monitor</string>
+    <string name="footfall_data">Hello\nAndroid!\nThis\na\nscrollable\ntext\nfield.\nLet\ntype\nsome\nstuff\njust\nto\ncheck\nif\nit\nwraps\nthe\ntext\nproperly\nor\nnot.\nI\nguess\nthis\nshould\nbe\nenough\ntext.</string>
+</resources>
