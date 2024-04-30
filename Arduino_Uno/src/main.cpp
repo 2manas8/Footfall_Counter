@@ -56,13 +56,13 @@ void wifiCheck() {
 }
 
 void setup() {
-  // pinMode(buzzer, OUTPUT);
-  // pinMode(led, OUTPUT);
-  // digitalWrite(led, HIGH);
-  // pinMode(ldr, INPUT);
-  // pinMode(esp, OUTPUT);
-  // digitalWrite(esp, LOW);
-  // pinMode(updating, INPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(led, OUTPUT);
+  digitalWrite(led, HIGH);
+  pinMode(ldr, INPUT);
+  pinMode(esp, OUTPUT);
+  digitalWrite(esp, LOW);
+  pinMode(updating, INPUT);
   pinMode(wifiConnection, INPUT);
   lcd.begin();
   lcd.stroke(0, 0, 0);
