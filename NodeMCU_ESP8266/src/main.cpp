@@ -1,8 +1,12 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
+#include <Firebase.h>
 
-const char* ssid = "Galaxy F23";
-const char* password = "some_random@23";
+#define FIREBASE_HOST "https://footfalldata-d6dde-default-rtdb.firebaseio.com/"
+#define FIREBASE_AUTH "f09662b55385ff50da29ab3edf5cb3d6267f8c79"
+
+const char* ssid = "NSUT_WIFI";
+const char* password = "";
 
 const char* serverAddress = "YourServerIPAddress";
 const int serverPort = 80;
@@ -31,6 +35,10 @@ void sendSignalToServer() {
   client.stop();
 }
 
+void sendDataToFirebase() {
+  
+}
+
 void connectionCheck() {
   while (WiFi.status() != WL_CONNECTED) {
     digitalWrite(wifi, LOW);
@@ -44,6 +52,7 @@ void connectionCheck() {
 }
 
 void setup() {
+  Serial.begin(115200);
   pinMode(led, OUTPUT);
   pinMode(countIncrease, INPUT);
   pinMode(wifi, OUTPUT);
@@ -51,7 +60,14 @@ void setup() {
   digitalWrite(uno, LOW);
   WiFi.begin(ssid, password);
   connectionCheck();
-}
+  // config.api_key = FIREBASE_AUTH;
+  // config.database_url = FIREBASE_HOST;
+  // if(Firebase.signUp(&config, &auth, "", "")) {
+  //   Serial.print("Sign Up OK");
+  // } else {
+  //   Serial.print("Sign Up Failed");
+  // }
+ }
 
 void loop() {
   connectionCheck();

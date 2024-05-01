@@ -20,6 +20,26 @@ const int wifiConnection = 7;
 unsigned long previousMillis = 0;
 const int interval = 5000;
 
+String days[7] = {"MON", "TUES", "WED", "THURS", "FRI", "SAT", "SUN"};
+int daysCount[7] = {0};
+int daysIndex = 0;
+
+void leftButton() {
+  daysIndex--;
+  if(daysIndex < 0) {
+    daysIndex = 6;
+  }
+  return;
+}
+
+void rightButton() {
+  daysIndex++;
+  if(daysIndex > 6) {
+    daysIndex = 0;
+  }
+  return;
+}
+
 int xAxis() {
   if((count >= 0) && (count <= 9)) {
     return 77;
@@ -56,7 +76,7 @@ void wifiCheck() {
 }
 
 void setup() {
-  pinMode(buzzer, OUTPUT);
+  // pinMode(buzzer, OUTPUT);
   pinMode(led, OUTPUT);
   digitalWrite(led, HIGH);
   pinMode(ldr, INPUT);
