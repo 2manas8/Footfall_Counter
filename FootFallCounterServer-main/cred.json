@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "footfallserver",
+  "private_key_id": "c1acd4cb9a14248ea54edbb47b56b01b1081dfd8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDq9Fvp0kRUlXjo\niKTeDzNCXJ2JPESxaWFwR+cNOMBFsnsh1isE8Csc/qtI0Zsx2YBQhFPVMh8L4uww\nIxcHcuSWv5FBSS7r7+B7yvQcJy3E8nvkUO5dZV9pqZyYWS9NoR5hzhfQNkaXSgi4\nBcmHQQZX0Me8XGFZjHjNB/tD42VktSDbYP3biiIDMQiaKCztHbDwZKrsKs+BsdCz\nLCzhCdJroZYdZ+GkRE6YY2zkOlVtNGwgrPn89p+4Jgqsw+M+PS/iP+KWWg5i+/cC\nf+xDmZbC34jUnwvdPeD5dG9u6cw4x257PXc4DURbzCNnjIl9wBmup1YJgfaI/RgQ\nJHqHyt/JAgMBAAECggEAGkdOaG6OGe/F4Cw4VGXa09dL/2dwP2+L6GUCYKYySxlV\nUEmF8j1ydQG+4pwfAYpUIa1LOxMqCchNpmymTLz6+Clg865dwyHHN9FRUDzJj7eX\nR8gNgQCvlT/VNezzr3kPztygKTeI2a78Hqj3C1uoe/XsARNMCBoAAN6dqdArLQIm\nUxmmVwe6FtQ2a6mlk8zWvOfrPR1vbJ/U6W0bBIe3vTLbO8ipOA/H/Z34obL/CE0d\n5qFEOFcIt1xXX/Ls4xIxEtDqAZK+QdTIp5MWna1HIojRKDq2XaN19EtWQO1y3iPj\nq5Zk1cGguwjThBbPBP6UpwnlieJH6vChjbS0u/KPiQKBgQD76rl2ZFKjAcRnbhyM\nrKJMcU5Y/3cymMTOt5fAE7cBMDokRsrvQIv/R8Dh5hklu9EMm+toHhvwS0A4Hb9v\nrhTvdvtc5XEzckjw1T/H3HNqtjat5rJ2/XFVJ3a3yrv7QdHTyJ6pxJKzIYydrupH\nVULPpoLaYuxiz7MAbXkdvLE3YwKBgQDuw0C6yBnFUzVDyXwcZP+9SNxW6u6MJNAt\nCUUPWwX5FZgvUZ9bR2VThujfhcqL/T1wAxLqUHTOom+KdqEYepsUcr32aW1L7/bm\nu1WUWHv9Qa1n/V2T9DOE6eeOR+roPTO1HolGJYKVQXVJnkn/zr8HweyVOTSh3FW9\ncoihtmEh4wKBgCOeEk7M7Gojq9M73El/dwr70in/JKlAtELN7mS35N4EJZRPdg3R\nwHl9eaX21INjRLFVsjjsWOLmoNPOUOzHXiplVjDSN+kgNXPnkrb9Ukw6Kwz3WzA7\nsTRq+fwOa/mgWrxo1xYFtwAgtDLvMiyXv3SAhGvAJM/rsdFTqRYtQZklAoGBAIMn\nfkcb5AwgyQGTjDmMwW6Yt3CHXMJe9nvGu8jTl1RcKFzV2VOqxF49nW4rcDe1xCnj\nhmBwEbnwQJUu1Q89SjLRVMgm4YL1LgtQnJIAiRt1GGwnIWBEpIg+dJQTrVYlSGIV\nhBKkSDb03hiyerOqPgVk4TCXW/INtot6ftNV+8VBAoGAFVFetnBCmgmB6kRk7teh\nryepRk9se3WgpLIDwxCRv/xPYdXRlexBQD3362SE76gS5As++M7XuPEWAN6uK4tD\nLALkVck2X2MfWULCFRaylCjF4NVTd6PMqrP1C2XWABRApliaZIwcV4jb0lsipEFV\nDAwIvY51aXzBTDO8cbapTF8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-76prx@footfallserver.iam.gserviceaccount.com",
+  "client_id": "104742492857151688807",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-76prx%40footfallserver.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
