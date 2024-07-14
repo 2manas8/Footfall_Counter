@@ -31,4 +31,4 @@ The Mall Footfall Counter is an IoT-based solution designed to accurately track 
 ## Contributors
 - Manas Pratim Das (https://github.com/2manas8)
 - Md Haider Imam (https://github.com/haiderimam07)
-- Sourabh
+- Sourabh (https://github.com/sourabhm1606)
