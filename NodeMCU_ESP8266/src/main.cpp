@@ -1,42 +1,28 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
-#include <Firebase.h>
+#include <ESP8266WebServer.h>
+#include <ESP8266HTTPClient.h>
 
-#define FIREBASE_HOST "https://footfalldata-d6dde-default-rtdb.firebaseio.com/"
-#define FIREBASE_AUTH "f09662b55385ff50da29ab3edf5cb3d6267f8c79"
+const char* ssid = "Galaxy F23";
+const char* password = "some_random@23";
 
-const char* ssid = "NSUT_WIFI";
-const char* password = "";
-
-const char* serverAddress = "YourServerIPAddress";
-const int serverPort = 80;
+const char* serverAddress = "https://securitycounterdata.onrender.com/fetchData?MACAddress=1";
 
 const int led = D4;
 const int countIncrease = D8;
 const int wifi = D7;
 const int uno = D6;
 
-void sendSignalToServer() {
-  WiFiClient client;
-  if (!client.connect(serverAddress, serverPort)) {
-    Serial.println("Connection failed");
-    return;
-  }
-  client.print("GET /your-endpoint?signal=high HTTP/1.1\r\n");
-  client.print("Host: ");
-  client.println(serverAddress);
-  client.println("Connection: close");
-  client.println();
-  delay(500);
-  while (client.available()) {
-    String line = client.readStringUntil('\r');
-    Serial.print(line);
-  }
-  client.stop();
-}
+ESP8266WebServer server(80);
 
-void sendDataToFirebase() {
-  
+void callAPI(String url) {
+  std::unique_ptr<BearSSL::WiFiClientSecure> client(new BearSSL::WiFiClientSecure);
+  client->setInsecure();
+  HTTPClient https;
+  https.begin(*client, url);
+  https.GET();
+  https.end();
+  return;
 }
 
 void connectionCheck() {
@@ -59,21 +45,13 @@ void setup() {
   pinMode(uno, OUTPUT);
   digitalWrite(uno, LOW);
   WiFi.begin(ssid, password);
-  connectionCheck();
-  // config.api_key = FIREBASE_AUTH;
-  // config.database_url = FIREBASE_HOST;
-  // if(Firebase.signUp(&config, &auth, "", "")) {
-  //   Serial.print("Sign Up OK");
-  // } else {
-  //   Serial.print("Sign Up Failed");
-  // }
  }
 
 void loop() {
   connectionCheck();
-  // if(digitalRead(countIncrease) == HIGH) {
-  //   digitalWrite(uno, HIGH);
-  //   sendSignalToServer();
-  //   digitalWrite(uno, LOW);
-  // }
+  if(digitalRead(countIncrease) == HIGH) {
+    digitalWrite(uno, HIGH);
+    callAPI(serverAddress);
+    digitalWrite(uno, LOW);
+  }
 }
