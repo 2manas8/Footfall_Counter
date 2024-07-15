@@ -10,14 +10,13 @@ app.get('/fetchData', async (req, res) => {
         const MACAddress = req.query.MACAddress
         const footFall = await db.collection('FootFallCollection').where('MACAddress', '==', MACAddress).orderBy('Time', 'asc').get()
         const data = footFall.docs.map(doc => doc.data())
-        res.status(200).send({
+        res.status(200).json({
             message: 'Data fetched successfully',
             data,
         })
     } catch (error) {
         console.log(error)
-        res.sendStatus(500)
-        res.send(error)
+        res.sendStatus(500).json({message: error})
     }
 })
 
@@ -32,17 +31,15 @@ app.get('/postData', async (req, res) => {
         }
         const result = await db.collection('FootFallCollection')
         const doc = await result.add(data)
-        res.status(200).send({
+        res.status(200).json({
             message: 'Data posted successfully',
             id: doc.id
         })
     } catch (error) {
         console.log(error)
-        res.sendStatus(500)
-        res.send(error)
+        res.sendStatus(500).json({message: error})
     }
 });
-
 
 app.get('/', (req, res) => {
     res.send('Server is online')
