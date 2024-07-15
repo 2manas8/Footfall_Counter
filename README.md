@@ -39,6 +39,15 @@ The app offers seamless integration with existing systems and provides detailed 
 
 ![App Overview](./assets/overview.png)
 
+### Latest Release
+
+- **Version:** v1.0.0
+- **Release Date:** July 7, 2024
+- **APK Download:**
+    - [ARM64-v8a](https://github.com/2manas8/Footfall_Counter/releases/download/v1.0.0/app-arm64-v8a-release.apk)
+    - [ARM-v7a](https://github.com/2manas8/Footfall_Counter/releases/download/v1.0.0/app-armeabi-v7a-release.apk)
+    - [x86](https://github.com/2manas8/Footfall_Counter/releases/download/v1.0.0/app-x86_64-release.apk)
+
 ## Contributors
 
 - Manas Pratim Das (https://github.com/2manas8)
